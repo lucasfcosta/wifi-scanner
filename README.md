@@ -56,12 +56,14 @@ wifi-scanner -i ath0
 // TODO
 ```
 
+
 ## Contributing
 
 Feel free to contribute in any way you want. Every help is valid.
 If you find any issues or even if you have a suggestion please feel free to report it using our [issue tracker](https://github.com/lucasfcosta/wifi-scanner/issues).
 
 This is the OpenSource Software's magic :sparkles:
+
 
 ## License
 
