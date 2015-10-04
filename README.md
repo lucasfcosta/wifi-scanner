@@ -1,14 +1,11 @@
 # wifi-scanner
 A command line tool for scanning nearby Wi-Fi networks using Node.js
 
-[![NPM](https://nodei.co/npm/wifi-scanner.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.com/wifi-scanner/)
-
-![Demo](https://github.com/lucasfcosta/wifi-scanner/blob/master/wifi-scanner.png)
-
 ```
 npm install -g wifi-scanner
 ```
 
+![Demo](https://github.com/lucasfcosta/wifi-scanner/blob/master/wifi-scanner.png)
 
 
 ## Instructions
