@@ -46,7 +46,7 @@ wifi-scanner -r -t 5000 -c security -f wep
 
 Gets every nearby network, prints the results to the console and saves them into a networks.json file.
 ```
-wifi-scanner -s -p networks.json
+wifi-scanner -p -o networks.json
 ```
 
 Gets every nearby network using the `ath0` interface. 
