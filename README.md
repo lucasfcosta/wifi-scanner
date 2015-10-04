@@ -23,6 +23,8 @@ Run `wifi-scanner` with the desired options on your terminal.
 | -o | --output [filename]          | (Optional) Output filename. |
 | -c | --criteria [criteria]          | (Optional) Criteria to filter. Example: 'security'. |
 | -f | --filter [result]            | (Optional) Desired result for specified criteria. Example: 'wep'. |
+| -a | --above [value]            | (Optional) Filters values above [value] for a specified criteria. |
+| -b | --below [value]            | (Optional) Filters values below [value] for a specified criteria. |
 | -r | --retry                      | (Optional) Should retry until it finds a result matching the specified filter. |
 | -t | --timeout                    | (Optional) Retry interval (millisseconds). Defaults to 1000. |
 
@@ -32,6 +34,11 @@ Run `wifi-scanner` with the desired options on your terminal.
 Searches for every WEP network:
 ```
 wifi-scanner -c security -f wep
+```
+
+Searches for every network between channels 1 and 6:
+```
+wifi-scanner -c channel -a 1 -b 6
 ```
 
 Searches for every WEP network each 5000ms until it finds one.
