@@ -18,11 +18,11 @@ Run `wifi-scanner` with the desired options on your terminal.
 | --------------------- |--------------------- | ----------- |
 | -h | --help                       | output usage information |
 | -V | --version                    | output the version number |
-| -i | --interface [interfaceName]  | Capture interface. Defaults to 'wlan0'. |
+| -i | --interface [interfaceName]  | Capture interface. Defaults to 'wlan0'. (CASE-SENSITIVE) |
 | -s | --stdout                       | (Optional) Print results to the console. |
-| -o | --output [filename]          | (Optional) Output filename. |
-| -c | --criteria [criteria]          | (Optional) Criteria to filter. Example: 'security'. |
-| -f | --filter [result]            | (Optional) Desired result for specified criteria. Example: 'wep'. |
+| -o | --output [filename]          | (Optional) Output filename. (CASE-SENSITIVE) |
+| -c | --criteria [criteria]          | (Optional) Criteria to filter. Example: 'security'. (CASE-SENSITIVE) |
+| -f | --filter [result]            | (Optional) Desired result for specified criteria. Example: 'wep'. (CASE-SENSITIVE)|
 | -r | --retry                      | (Optional) Should retry until it finds a result matching the specified filter. |
 | -t | --timeout                    | (Optional) Retry interval (millisseconds). Defaults to 1000. |
 
