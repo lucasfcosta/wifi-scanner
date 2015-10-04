@@ -16,22 +16,25 @@ Run `wifi-scanner` with the desired options on your terminal.
 
 | Short Version Command | Long Version Command | Description |
 | --------------------- |--------------------- | ----------- |
-| -h | --help                       | output usage information |
-| -V | --version                    | output the version number |
-| -i | --interface [interfaceName]  | Capture interface. Defaults to 'wlan0'. (CASE-SENSITIVE) |
-| -s | --stdout                       | (Optional) Print results to the console. |
-| -o | --output [filename]          | (Optional) Output filename. (CASE-SENSITIVE) |
+| -h | --help                         | output usage information |
+| -V | --version                      | output the version number |
+| -i | --interface [interfaceName]    | Capture interface. Defaults to 'wlan0'. (CASE-SENSITIVE) |
+| -p | --print                        | (Optional) Print results to the console. |
+| -o | --output [filename]            | (Optional) Output filename. (CASE-SENSITIVE) |
 | -c | --criteria [criteria]          | (Optional) Criteria to filter. Example: 'security'. (CASE-SENSITIVE) |
-| -f | --filter [result]            | (Optional) Desired result for specified criteria. Example: 'wep'. (CASE-SENSITIVE)|
-| -r | --retry                      | (Optional) Should retry until it finds a result matching the specified filter. |
-| -t | --timeout                    | (Optional) Retry interval (millisseconds). Defaults to 1000. |
+| -s | --sortCriteria [criteria]      | (Optional) Sort results according to a specified criteria. |
+| -a | --ascending                    | (Optional) Sort results ascendingly. (DEFAULT) |
+| -d | --descending                   |(Optional) Sort results descendingly.
+| -f | --filter [result]              | (Optional) Desired result for specified criteria. Example: 'wep'. (CASE-SENSITIVE)|
+| -r | --retry                        | (Optional) Should retry until it finds a result matching the specified filter. |
+| -t | --timeout                      | (Optional) Retry interval (millisseconds). Defaults to 1000. |
 
 
 ## Example Queries
 
-Searches for every WEP network:
+Searches for every WEP network and sorts them descendingly by their signal:
 ```
-wifi-scanner -c security -f wep
+wifi-scanner -c security -f wep -s signal -d
 ```
 
 Searches for every WEP network each 5000ms until it finds one.
@@ -41,7 +44,7 @@ wifi-scanner -r -t 5000 -c security -f wep
 
 Gets every nearby network, prints the results to the console and saves them into a networks.json file.
 ```
-wifi-scanner -s -o networks.json
+wifi-scanner -s -p networks.json
 ```
 
 Gets every nearby network using the `ath0` interface. 
