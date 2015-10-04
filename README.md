@@ -55,9 +55,16 @@ wifi-scanner -i ath0
 
 ## Criteria
 
-```js
-// TODO
-```
+| Name           | Description                                      |
+| -------------- | ------------------------------------------------ |
+| address        | MAC adres                                        |
+| channel        | Broadcast channel                                |
+| frequency      | Broadcast frequency                              |
+| mode           | Mode                                             |
+| quality        | Network quality                                  |
+| signal         | Signal level                                     |
+| ssid           | SSID                                             |
+| security       | Security (wpa, wep, wpa2)                        |
 
 
 ## Contributing
